@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63O-Vl-XcM" customClass="HoshiTextField" customModule="forrgeTest" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63O-Vl-XcM" customClass="HoshiTextField" customModule="forrgeTest" customModuleProvider="target">
                                 <rect key="frame" x="149" y="285" width="292" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="292" id="A4c-5m-Reg"/>
@@ -34,7 +34,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-eq-C83" customClass="HoshiTextField" customModule="forrgeTest" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNf-eq-C83" customClass="HoshiTextField" customModule="forrgeTest" customModuleProvider="target">
                                 <rect key="frame" x="149" y="337" width="292" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="292" id="Vlu-FK-iES"/>
@@ -48,40 +48,28 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="paF-Ts-8xH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="paF-Ts-8xH">
                                 <rect key="frame" x="198" y="82" width="194" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="194" id="V4K-YV-Ljb"/>
-                                    <constraint firstAttribute="height" constant="128" id="s9P-cW-B3D"/>
-                                </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Forgot Password" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c0Z-cQ-09O">
-                                <rect key="frame" x="344" y="343" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="0Jb-JS-p6s"/>
-                                    <constraint firstAttribute="width" constant="97" id="PeR-1F-pBT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Rectangle 1" translatesAutoresizingMaskIntoConstraints="NO" id="FkD-S4-LwY">
+                                <rect key="frame" x="168" y="387" width="254" height="61"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SIGN IN" translatesAutoresizingMaskIntoConstraints="NO" id="dIX-od-oGe">
+                                <rect key="frame" x="209" y="390" width="172" height="55"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Forgot Password" translatesAutoresizingMaskIntoConstraints="NO" id="LFN-dS-pvB">
+                                <rect key="frame" x="359" y="345" width="69" height="22"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="paF-Ts-8xH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Fv-lk-uay"/>
-                            <constraint firstItem="63O-Vl-XcM" firstAttribute="top" secondItem="paF-Ts-8xH" secondAttribute="bottom" constant="75" id="Aoj-oG-ra4"/>
-                            <constraint firstItem="paF-Ts-8xH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="HIt-aS-WDv"/>
+                            <constraint firstItem="paF-Ts-8xH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="BPr-M8-z8B"/>
                             <constraint firstItem="63O-Vl-XcM" firstAttribute="leading" secondItem="eNf-eq-C83" secondAttribute="leading" id="Jdt-dN-j1a"/>
-                            <constraint firstItem="63O-Vl-XcM" firstAttribute="top" secondItem="paF-Ts-8xH" secondAttribute="bottom" constant="75" id="L1Q-qD-FmR"/>
-                            <constraint firstItem="c0Z-cQ-09O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NK4-iR-643"/>
                             <constraint firstItem="eNf-eq-C83" firstAttribute="top" secondItem="63O-Vl-XcM" secondAttribute="bottom" constant="22" id="Yf9-su-bsk"/>
                             <constraint firstItem="63O-Vl-XcM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yjc-bd-6tS"/>
                             <constraint firstItem="eNf-eq-C83" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b1z-lx-tW9"/>
                             <constraint firstItem="eNf-eq-C83" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fdD-Hm-T5Q"/>
-                            <constraint firstItem="paF-Ts-8xH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="62" id="i8J-0K-Gjr"/>
-                            <constraint firstItem="paF-Ts-8xH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="198" id="kyG-SC-o4Z"/>
-                            <constraint firstItem="63O-Vl-XcM" firstAttribute="trailing" secondItem="c0Z-cQ-09O" secondAttribute="trailing" id="oKY-xs-Lhh"/>
-                            <constraint firstItem="paF-Ts-8xH" firstAttribute="centerX" secondItem="eNf-eq-C83" secondAttribute="centerX" id="paj-UX-zrv"/>
-                            <constraint firstItem="c0Z-cQ-09O" firstAttribute="top" secondItem="63O-Vl-XcM" secondAttribute="bottom" constant="22" id="phW-uY-fLs"/>
+                            <constraint firstItem="paF-Ts-8xH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="thr-BR-MeU"/>
                             <constraint firstItem="63O-Vl-XcM" firstAttribute="trailing" secondItem="eNf-eq-C83" secondAttribute="trailing" id="uOF-kh-btr"/>
                             <constraint firstItem="63O-Vl-XcM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zYl-C6-dBX"/>
                         </constraints>
@@ -120,10 +108,135 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Yl-b2-E0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="936" y="-357"/>
+            <point key="canvasLocation" x="869" y="-483"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nZa-RF-gA1">
+            <objects>
+                <viewController id="BlD-It-mdO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="asH-2y-v5B"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lot-GL-5aK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lCD-6j-YS5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forgot-password-edited" translatesAutoresizingMaskIntoConstraints="NO" id="OJ9-uZ-LG8">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="282"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OJ9-uZ-LG8" secondAttribute="height" multiplier="100:47" id="8jR-iV-Fkq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OJ9-uZ-LG8" firstAttribute="top" secondItem="lCD-6j-YS5" secondAttribute="topMargin" id="INi-9g-0cf"/>
+                            <constraint firstItem="OJ9-uZ-LG8" firstAttribute="leading" secondItem="lCD-6j-YS5" secondAttribute="leadingMargin" constant="-20" id="NsE-W1-mg2"/>
+                            <constraint firstItem="OJ9-uZ-LG8" firstAttribute="centerX" secondItem="lCD-6j-YS5" secondAttribute="centerX" id="o0A-nu-USA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exL-5r-pIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1695" y="-425"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zAa-cR-WhH">
+            <objects>
+                <viewController id="B5u-nC-ca2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TPD-ei-Npm"/>
+                        <viewControllerLayoutGuide type="bottom" id="QXn-tf-qU4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hwK-Fg-ZKg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="forgot-password" translatesAutoresizingMaskIntoConstraints="NO" id="Gf7-a2-dz2">
+                                <rect key="frame" x="-5" y="0.0" width="622" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gf7-a2-dz2" secondAttribute="trailing" constant="-20" id="EcP-EW-IRx"/>
+                            <constraint firstItem="Gf7-a2-dz2" firstAttribute="centerX" secondItem="hwK-Fg-ZKg" secondAttribute="centerX" id="JhO-8z-i0r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gf7-a2-dz2" secondAttribute="trailing" constant="-37" id="UQ9-sd-4T1"/>
+                            <constraint firstItem="Gf7-a2-dz2" firstAttribute="top" secondItem="hwK-Fg-ZKg" secondAttribute="topMargin" id="VzV-jK-3DS"/>
+                            <constraint firstItem="Gf7-a2-dz2" firstAttribute="leading" secondItem="hwK-Fg-ZKg" secondAttribute="leadingMargin" constant="-25" id="YS8-rZ-moO"/>
+                            <constraint firstItem="QXn-tf-qU4" firstAttribute="top" secondItem="Gf7-a2-dz2" secondAttribute="bottom" id="nRV-In-qOt"/>
+                            <constraint firstItem="Gf7-a2-dz2" firstAttribute="top" secondItem="hwK-Fg-ZKg" secondAttribute="topMargin" id="tEj-bT-T42"/>
+                            <constraint firstItem="Gf7-a2-dz2" firstAttribute="leading" secondItem="hwK-Fg-ZKg" secondAttribute="leadingMargin" constant="-20" id="wJx-aq-ybC"/>
+                            <constraint firstItem="Gf7-a2-dz2" firstAttribute="centerX" secondItem="hwK-Fg-ZKg" secondAttribute="centerX" id="wKq-zW-rlD"/>
+                            <constraint firstItem="QXn-tf-qU4" firstAttribute="top" secondItem="Gf7-a2-dz2" secondAttribute="bottom" id="wXz-72-tIZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ky-dA-3Ib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1695" y="278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cng-0J-NCC">
+            <objects>
+                <viewController id="5d8-PW-TOK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s0a-S3-2YD"/>
+                        <viewControllerLayoutGuide type="bottom" id="IZh-FV-eHG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3zY-2d-gnu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uyE-da-MJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1653" y="1149"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cV0-68-rLu">
+            <objects>
+                <viewController id="heK-9J-KEF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XZ1-Pg-Slj"/>
+                        <viewControllerLayoutGuide type="bottom" id="k1d-Jv-LGM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Y42-4d-OmW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="forgot-password-confirm" translatesAutoresizingMaskIntoConstraints="NO" id="mQp-R4-Nka">
+                                <rect key="frame" x="0.0" y="-5" width="600" height="609"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mQp-R4-Nka" firstAttribute="leading" secondItem="Y42-4d-OmW" secondAttribute="leadingMargin" constant="-20" id="1EN-da-3ci"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mQp-R4-Nka" secondAttribute="trailing" constant="-20" id="3rY-MT-HjO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="mQp-R4-Nka" secondAttribute="bottom" constant="-9" id="8sG-hc-BRO"/>
+                            <constraint firstItem="mQp-R4-Nka" firstAttribute="top" secondItem="Y42-4d-OmW" secondAttribute="topMargin" constant="-5" id="EUX-sM-B0G"/>
+                            <constraint firstItem="mQp-R4-Nka" firstAttribute="centerX" secondItem="Y42-4d-OmW" secondAttribute="centerX" id="PTl-v9-AIg"/>
+                            <constraint firstItem="k1d-Jv-LGM" firstAttribute="top" secondItem="mQp-R4-Nka" secondAttribute="bottom" id="Tb1-ls-Vwa"/>
+                            <constraint firstItem="mQp-R4-Nka" firstAttribute="top" secondItem="Y42-4d-OmW" secondAttribute="topMargin" id="UdJ-68-Qaf"/>
+                            <constraint firstItem="mQp-R4-Nka" firstAttribute="centerX" secondItem="Y42-4d-OmW" secondAttribute="centerX" id="ZU1-Yy-14Q"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="mQp-R4-Nka" secondAttribute="bottom" constant="-4" id="bj2-D5-iC6"/>
+                            <constraint firstItem="mQp-R4-Nka" firstAttribute="leading" secondItem="Y42-4d-OmW" secondAttribute="leadingMargin" constant="-20" id="dY5-DD-vgb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mQp-R4-Nka" secondAttribute="trailing" constant="-20" id="yUM-31-Fzl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMX-cU-9Br" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989" y="690"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Forgot Password" width="90" height="12"/>
+        <image name="Rectangle 1" width="303" height="48"/>
+        <image name="SIGN IN" width="45" height="11"/>
+        <image name="forgot-password" width="750" height="1334"/>
+        <image name="forgot-password-confirm" width="750" height="1334"/>
         <image name="forgot-password-edited" width="375" height="177"/>
         <image name="loading" width="391" height="371"/>
     </resources>
